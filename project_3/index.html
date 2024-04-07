@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="Calculator">
+            <div id="main">0</div>
+            <div class="calc">
+                <div class="op grid_items">7</div>
+                <div class="op grid_items">8</div>
+                <div class="op grid_items">9</div>
+                <div class="grid_items" style="background-color: #647299; text-align: center;" onclick="del()">DEL</div>
+
+                <div class="op grid_items">4</div>
+                <div class="op grid_items">5</div>
+                <div class="op grid_items">6</div>
+                <div class="op grid_items">*</div>
+
+                <div class="op grid_items">1</div>
+                <div class="op grid_items">2</div>
+                <div class="op grid_items">3</div>
+                <div class="op grid_items">/</div>
+
+                <div class="op grid_items">.</div>
+                <div class="op grid_items">0</div>
+                <div class="op grid_items">+</div>
+                <div class="op grid_items">-</div>
+
+                <div class="grid_items" style="grid-column-start: 1; grid-column-end: 3; background-color: #647299; text-align: center;" onclick="reset()">RESET</div>
+                <div class="grid_items" style="grid-column-start: 3; grid-column-end: 5; background-color: #D13F30; text-align: center;" onclick="equate()">=</div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="index.js">
+    </script>
+</body>
+</html>
