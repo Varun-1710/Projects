@@ -41,9 +41,14 @@ let reset = () =>{
 }
 
 let equate = ()=>{
-    let x = eval(data.innerText);
-    data.innerText = x.toFixed(3);
+    
+    try {
+        let x = eval(data.innerText);
+        data.innerText = x.toFixed(3);
+    } catch (error) {
+        data.innerText = "Invalid Syntax";
+    }
+    
 }
-
 
 

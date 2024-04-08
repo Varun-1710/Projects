@@ -59,4 +59,13 @@
     font-weight :bolder;
     border-radius: 1vw;
     font-size: larger;
+    cursor:pointer;
+    box-sizing: border-box;
+    transition: font-size 0.3s ease;
+}
+
+.grid_items:hover{
+    font-size: x-large;
+    border:1px solid red;
+    
 }
