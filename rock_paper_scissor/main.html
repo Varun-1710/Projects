@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header></header>
+    <div class="container">
+        <div class="container1">
+            <div style="width: 30vw; height: 20vh; font-size: xx-large; color: white;">
+                ROCK <br>
+                PAPER <br>
+                SCISSOR 
+            </div>
+            <div class="scoreContainer">
+                COMPUTER <br> SCORE
+                <h1 id="pcScore" style="color: black; font-size: xx-large;">0</h1>
+            </div>
+            <div class="scoreContainer">
+                MY <br> SCORE
+                <h1 id="myScore" style="color: black; font-size: xx-large;">0</h1>
+            </div>
+        </div>
+
+        <div class="container3" id="main">
+            <div class="main_container">
+                <div class="Image" style="position: absolute; left: 0; border-color: #0074B6;"><img src="/images/rock.png" alt="rock" class="click"></div>
+                <div class="Image" style="position: absolute; right: 0; border-color: #BD00FF;"><img src="/images/scissor.png" alt="scissor" class="click"></div>
+                <div class="Image" style="position: absolute; bottom: 0; left:12vw; border-color: #FFA943;"><img src="/images/paper.png" alt="paper" class="click"></div>
+            </div>
+        </div>
+
+
+        <div class="container2" id="game" style="display: none;">
+
+            <div class="img_container">
+                <h1>YOU PICKED</h1>
+                <div class="Image">
+                    <img src="/images/paper.png" alt="" id="myImage">
+                </div>
+                
+            </div>
+
+            <div style="height: 30vh; width: 30vw; display: flex; flex-direction: column; justify-content: space-around; align-items: center;">
+                <div id="res"></div>
+                <div style="display: flex; justify-content: center; align-items: center; height: 8vh; width: 12vw; background-color: white; padding: 1px; cursor: pointer;">
+                    <div id="btn"></div>
+                </div>
+            </div>
+
+            <div class="img_container">
+                <h1>PC PICKED</h1>
+                <div class="Image">
+                    <img src="/images/paper.png" alt="" id="pcImage">
+                </div>
+                
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <footer>
+        <div style="display: flex; justify-content: space-around; width: 20vw;">
+            <div id="rules" class="footer_items">RULES</div>
+            <div id="next" class="footer_items" style="display: none;"><a href="cong.html">NEXT</a></div>
+        </div> 
+    </footer>
+
+    <div id="rule_box">
+        <div style="height: 8vh; font-size: x-large;">Game Rules</div>
+        <ul style="list-style-type: square;">
+            <li><div style="height: 8vh; font-size: small;">Rock beats scissors, scissors beat paper, and paper beats rock.</div></li>
+            <li><div style="height: 10vh; font-size: small;">Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</div></li>
+            <li><div style="height: 8vh; font-size: small;">Use rock, paper, scissors to settle minor decisions or simply play to pass the time</div></li>
+            <li><div style="height: 8vh; font-size: small;">If both players lay down the same hand, each player lays down another hand</div></li>
+        </ul>
+        
+    </div>
+
+    <div id="cross">
+        X
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

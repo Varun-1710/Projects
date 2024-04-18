@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congrats</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header></header>
+    <div style="display: flex; height: 80vh; width: 60vw; flex-direction: column; justify-content: space-around; align-items: center; margin: auto;">
+
+        <div style="height:50vh; width: 50vw; background-image:url(./images/congrats.png); background-repeat: no-repeat; background-size: contain; background-position: center;"></div>
+        <div style="display: flex; justify-content: center; align-items: center; height: 8vh; width: 12vw; background-color: white; padding: 1px; cursor: pointer;">
+            <a href="main.html" style="color: #6B6B6B;">PLAY AGAIN</a>
+        </div>
+    </div>
+
+    <footer>
+        <div style="display: flex; justify-content: space-around; width: 20vw;">
+            <div id="rules" class="footer_items">RULES</div>
+        </div> 
+    </footer>
+
+    <div id="rule_box">
+        <div style="height: 8vh; font-size: x-large;">Game Rules</div>
+        <ul style="list-style-type: square;">
+            <li><div style="height: 8vh; font-size: small;">Rock beats scissors, scissors beat paper, and paper beats rock.</div></li>
+            <li><div style="height: 10vh; font-size: small;">Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</div></li>
+            <li><div style="height: 8vh; font-size: small;">Use rock, paper, scissors to settle minor decisions or simply play to pass the time</div></li>
+            <li><div style="height: 8vh; font-size: small;">If both players lay down the same hand, each player lays down another hand</div></li>
+        </ul>
+        
+    </div>
+
+    <div id="cross">
+        X
+    </div>
+    
+    <script>
+        document.getElementById('rules').addEventListener('click',()=>{
+        document.getElementById('rule_box').style.display = 'flex';
+        document.getElementById('cross').style.display = 'block';
+    });
+
+    document.getElementById('cross').addEventListener('click',()=>{
+        document.getElementById('rule_box').style.display = 'none';
+        document.getElementById('cross').style.display = 'none';
+    });
+    </script>
+    
+</body>
+</html>
